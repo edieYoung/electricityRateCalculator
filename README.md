@@ -5,10 +5,10 @@ This helps you to calculate the eletricity cost of every single month, cost in t
 You can calculate 
 Modify the main function in calculator.go
 ```
-    // instantiate a rate plan {rate@500, rate@1000, terminationFee, leasingLength}
-	rp := RatePlan{0.13, 0.12, 175, 6}
-	// calculate the cost according to an original/estimated usage report (csv file)
-	costMap := rp.Calculate("usage_2019-02-20.csv") 
+// instantiate a rate plan {rate@500, rate@1000, terminationFee, leasingLength}
+rp := RatePlan{0.13, 0.12, 175, 6}
+// calculate the cost according to an original/estimated usage report (csv file)
+costMap := rp.Calculate("usage_2019-02-20.csv") 
 
 ```
 
