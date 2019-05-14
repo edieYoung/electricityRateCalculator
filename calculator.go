@@ -62,7 +62,9 @@ func (rp RatePlan) Calculate(fileName string) map[string]float32{
 }
 
 func main(){
+	// instantiate a rate plan {rate@500, rate@1000, terminationFee, leasingLength}
 	rp := RatePlan{0.13, 0.12, 175, 6}
+	// calculate the cost according to an original/estimated usage report
 	costMap := rp.Calculate("usage_2019-02-20.csv")
 	fmt.Println(costMap)
 }
